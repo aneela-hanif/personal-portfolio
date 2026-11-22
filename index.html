@@ -4,81 +4,107 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Aneela Hanif | Computer Science Student</title>
-    <meta
-      name="description"
-      content="Aneela Hanif is a computer science student working remotely at Linkeinfix on AI engineering, RAG and LLMs, AI chatbots, and quality assurance."
-    />
-    <meta name="author" content="Aneela Hanif" />
+    <meta name="description" content="Aneela Hanif is a computer science student in Sahiwal working remotely at Linkeinfix on AI engineering, RAG and LLMs, chatbot development, and quality assurance." />
     <meta property="og:title" content="Aneela Hanif | Computer Science Student" />
-    <meta
-      property="og:description"
-      content="Remote work at Linkeinfix across AI engineering, RAG and LLMs, chatbot development, and QA. Projects include a document chatbot, a React student app, and a Flask API."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://aneela-hanif.github.io/personal-portfolio/" />
+    <meta property="og:description" content="Remote work at Linkeinfix. AI engineering, RAG and LLM, AI chatbots, and QA." />
+    <meta property="og:image" content="https://aneela-hanif.github.io/personal-portfolio/images/profile.jpg" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,650&family=Outfit:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      if (localStorage.getItem("theme") === "dark") document.documentElement.classList.add("dark");
+    </script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
-    <header class="nav">
-      <a class="brand" href="#top">Aneela Hanif</a>
-      <nav aria-label="Page">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">
+          <img src="images/profile.jpg" alt="" width="36" height="36" />
+          Aneela Hanif
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#services">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" type="button" data-theme aria-label="Toggle color theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z"/></svg>
+          </button>
+          <a class="btn btn-primary" href="contact.html"><span class="hire-label">Hire Me</span></a>
+          <button class="menu-btn" type="button" data-menu aria-expanded="false" aria-label="Open menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="menu-panel" data-menu-panel aria-label="Mobile">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#services">Services</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="eyebrow">Computer Science Student</p>
+      <section class="hero wrap" id="top">
+        <div>
+          <p class="kicker">Computer Science Student</p>
           <h1>Aneela Hanif</h1>
+          <p class="hero-title">Remote at Linkeinfix</p>
+          <p class="rotator" data-rotator>AI Engineering</p>
           <p class="lede">
-            Remote work at <strong>Linkeinfix</strong> across AI engineering, RAG and LLMs,
-            chatbot development, and quality assurance.
+            I work remotely at Linkeinfix across AI engineering, RAG and LLM systems, AI chatbot development, and quality assurance. Based in Sahiwal, Pakistan.
           </p>
           <div class="actions">
-            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-primary" href="contact.html">Hire Me</a>
+            <a class="btn btn-ghost" href="#projects">View Projects</a>
             <a class="btn btn-ghost" href="https://github.com/aneela-hanif" rel="noopener">GitHub</a>
           </div>
         </div>
-        <figure class="portrait">
-          <div class="monogram" aria-hidden="true">AH</div>
+        <figure class="hero-photo">
+          <img src="images/profile.jpg" alt="Aneela Hanif" width="720" height="900" />
           <figcaption>
             <span>Aneela Hanif</span>
-            <span>Remote · Linkeinfix</span>
+            <span>Sahiwal · Remote</span>
           </figcaption>
         </figure>
       </section>
 
-      <section id="about">
+      <section class="wrap" id="about">
         <p class="section-label">About</p>
-        <h2>Student, building software that talks to real data.</h2>
-        <p class="prose">
-          I study computer science and ship small, working systems: a document chatbot that
-          retrieves from uploaded files, a React app that lists students, and the Flask API
-          behind that list. At Linkeinfix I work remotely on AI engineering, RAG and LLM
-          features, AI chatbots, and quality assurance.
-        </p>
+        <h2>Building chatbots, APIs, and the checks around them.</h2>
+        <div class="about-grid">
+          <p class="prose">
+            I am a computer science student. Alongside my studies I work remotely at Linkeinfix on AI engineering, retrieval-augmented generation and large language models, AI chatbot development, and quality assurance. My GitHub projects are a document chatbot, a React student list, and the Flask API that serves it.
+          </p>
+          <ul class="chips">
+            <li>AI Engineering</li>
+            <li>RAG &amp; LLM</li>
+            <li>AI Chatbot Development</li>
+            <li>Quality Assurance</li>
+            <li>Python</li>
+            <li>React</li>
+          </ul>
+        </div>
       </section>
 
-      <section id="experience">
+      <section class="wrap" id="experience">
         <p class="section-label">Experience</p>
         <h2>Professional experience</h2>
-        <article class="job">
-          <div class="job-meta">
-            <p class="job-company">Linkeinfix</p>
-            <p class="job-mode">Remote</p>
+        <article class="panel job">
+          <div>
+            <p class="company">Linkeinfix</p>
+            <p class="kicker">Remote</p>
           </div>
           <div>
             <h3>AI Engineering, RAG &amp; LLM, Chatbots, and QA</h3>
@@ -88,77 +114,82 @@
               <li>AI Chatbot Development</li>
               <li>Quality Assurance (QA)</li>
             </ul>
-            <p class="prose">
-              Remote work at Linkeinfix in these four areas: AI engineering, retrieval-augmented
-              generation and large language models, AI chatbot development, and quality assurance.
-            </p>
+            <p class="prose">Remote work at Linkeinfix in AI engineering, retrieval-augmented generation and large language models, AI chatbot development, and quality assurance.</p>
           </div>
         </article>
       </section>
 
-      <section id="projects">
+      <section class="wrap" id="projects">
         <p class="section-label">Projects</p>
-        <h2>Selected work from GitHub</h2>
+        <h2>Selected work</h2>
         <div class="cards">
-          <article class="card">
-            <p class="card-kicker">Python · Flask · ChromaDB</p>
+          <article class="panel card">
+            <p class="kicker">Python · Flask · ChromaDB</p>
             <h3>Smart Chatbot System</h3>
-            <p>
-              Document chatbot. Upload a PDF or text file, split it into chunks, store them in
-              ChromaDB, retrieve the relevant pieces, and answer with an LLM through OpenRouter.
-            </p>
+            <p>Upload a PDF or text file, split it into chunks, store them in ChromaDB, retrieve the relevant pieces, and answer with an LLM through OpenRouter.</p>
+            <div class="tech"><span>Python</span><span>Flask</span><span>ChromaDB</span><span>RAG</span></div>
             <a href="https://github.com/aneela-hanif/smart-chatbot-system" rel="noopener">View repository</a>
           </article>
-          <article class="card">
-            <p class="card-kicker">React · JavaScript</p>
+          <article class="panel card">
+            <p class="kicker">React · JavaScript</p>
             <h3>Student App</h3>
-            <p>
-              React interface that loads students from a local API and shows each record’s ID,
-              name, age, and city.
-            </p>
+            <p>React interface that loads students from a local API and shows each record’s ID, name, age, and city.</p>
+            <div class="tech"><span>React</span><span>JavaScript</span></div>
             <a href="https://github.com/aneela-hanif/studentapp" rel="noopener">View repository</a>
           </article>
-          <article class="card">
-            <p class="card-kicker">Python · Flask · SQL Server</p>
+          <article class="panel card">
+            <p class="kicker">Python · Flask · SQL Server</p>
             <h3>Flask API</h3>
-            <p>
-              Flask service for the student app. It reads the Students table from SQL Server and
-              returns the rows from <code>GET /students</code>.
-            </p>
+            <p>Flask service for the student app. It reads the Students table from SQL Server and returns the rows from GET /students.</p>
+            <div class="tech"><span>Flask</span><span>SQL Server</span><span>Python</span></div>
             <a href="https://github.com/aneela-hanif/flask-api" rel="noopener">View repository</a>
           </article>
         </div>
       </section>
 
-      <section id="skills">
+      <section class="wrap" id="skills">
         <p class="section-label">Skills</p>
         <h2>What I use</h2>
-        <ul class="chips">
-          <li>Python</li>
-          <li>Flask</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>HTML</li>
-          <li>SQL Server</li>
-          <li>ChromaDB</li>
-          <li>RAG</li>
-          <li>LLM</li>
-          <li>Quality Assurance</li>
-          <li>Git</li>
-        </ul>
+        <div class="skill-grid">
+          <article class="panel skill-card">
+            <h3>AI</h3>
+            <p>RAG pipelines, document chunking, LLM replies, and chatbot flows.</p>
+          </article>
+          <article class="panel skill-card">
+            <h3>Backend</h3>
+            <p>Python, Flask, and SQL Server for small APIs.</p>
+          </article>
+          <article class="panel skill-card">
+            <h3>Frontend &amp; QA</h3>
+            <p>JavaScript, React, HTML, and quality assurance on the work at Linkeinfix.</p>
+          </article>
+        </div>
       </section>
 
-      <section id="contact" class="contact">
-        <p class="section-label">Contact</p>
-        <h2>Find me on GitHub</h2>
-        <p class="prose">The public profile is the best place to reach me and see the code.</p>
-        <a class="btn btn-primary" href="https://github.com/aneela-hanif" rel="noopener">github.com/aneela-hanif</a>
+      <section class="wrap" id="services">
+        <p class="section-label">Services</p>
+        <h2>Areas of work</h2>
+        <div class="cards">
+          <article class="panel card">
+            <h3>AI chatbot development</h3>
+            <p>Chat flows that answer from uploaded documents instead of a blank prompt.</p>
+          </article>
+          <article class="panel card">
+            <h3>RAG &amp; LLM</h3>
+            <p>Chunking, retrieval with ChromaDB, and passing that context to a language model.</p>
+          </article>
+          <article class="panel card">
+            <h3>Quality assurance</h3>
+            <p>Checking AI and software work at Linkeinfix as part of the remote role.</p>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>Aneela Hanif</p>
-      <a href="https://github.com/aneela-hanif" rel="noopener">GitHub</a>
+      <p>Aneela Hanif · Sahiwal</p>
+      <a href="contact.html">Contact</a>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
