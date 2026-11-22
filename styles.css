@@ -319,7 +319,47 @@ h2 { margin: 0 0 1rem; font-size: clamp(2rem, 4vw, 3rem); }
 
 .card p, .skill-card p { margin: 0; color: var(--text-muted); }
 
-.card a { display: inline-block; margin-top: 1rem; color: var(--accent); font-weight: 700; }
+.card a, .project-body a { display: inline-block; margin-top: 1rem; color: var(--accent); font-weight: 700; }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.project-card { overflow: hidden; }
+
+.project-cover {
+  height: 168px;
+  display: grid;
+  place-items: center;
+}
+
+.project-cover-chat {
+  background:
+    radial-gradient(120px 80px at 70% 30%, rgba(255, 255, 255, 0.18), transparent 70%),
+    linear-gradient(145deg, #3a2430, #8b1e3f);
+}
+
+.project-cover-eme {
+  background:
+    radial-gradient(140px 90px at 20% 80%, rgba(255, 255, 255, 0.12), transparent 70%),
+    linear-gradient(145deg, #1c1917, #44403c);
+}
+
+.project-body { padding: 1.15rem 1.25rem 1.35rem; }
+
+.project-tag {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.project-body h3 { margin: 0.25rem 0 0.5rem; font-size: 1.45rem; }
+
+.project-body p { margin: 0; color: var(--text-muted); }
+
+.more-work { margin-top: 1rem; grid-template-columns: 1fr 1fr; }
 
 .tech { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.9rem; }
 
@@ -455,7 +495,7 @@ textarea { min-height: 140px; resize: vertical; }
 @media (max-width: 980px) {
   .nav-links { display: none; }
   .menu-btn { display: grid; }
-  .hero, .about-grid, .job, .cards, .skill-grid, .contact-grid, .fields, .ai-split { grid-template-columns: 1fr; }
+  .hero, .about-grid, .job, .cards, .skill-grid, .contact-grid, .fields, .ai-split, .project-grid, .more-work { grid-template-columns: 1fr; }
   .hero-photo,
   .hero-photo img { width: 240px; max-width: 240px; }
   .hero-photo img { height: 234px; }

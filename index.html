@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=9" />
+    <link rel="stylesheet" href="styles.css?v=10" />
     <script>
       if (localStorage.getItem("theme") === "dark") document.documentElement.classList.add("dark");
     </script>
@@ -149,14 +149,43 @@
       <section class="wrap" id="projects">
         <p class="section-label">Projects</p>
         <h2>Selected work</h2>
-        <div class="cards">
-          <article class="panel card">
-            <p class="kicker">Python · Flask · ChromaDB</p>
-            <h3>Smart Chatbot System</h3>
-            <p>Upload a PDF or text file, split it into chunks, store them in ChromaDB, retrieve the relevant pieces, and answer with an LLM through OpenRouter.</p>
-            <div class="tech"><span>Python</span><span>Flask</span><span>ChromaDB</span><span>RAG</span></div>
-            <a href="https://github.com/aneela-hanif/smart-chatbot-system" rel="noopener">View repository</a>
+        <div class="project-grid">
+          <article class="panel project-card">
+            <div class="project-cover project-cover-chat" aria-hidden="true">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                <rect x="10" y="14" width="40" height="30" rx="10" fill="#fff"/>
+                <path d="M18 44 16 54l12-8" fill="#fff"/>
+                <circle cx="24" cy="29" r="3" fill="#8b1e3f"/>
+                <circle cx="32" cy="29" r="3" fill="#8b1e3f"/>
+                <circle cx="40" cy="29" r="3" fill="#8b1e3f"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">Artificial Intelligence</p>
+              <h3>Smart Chatbot</h3>
+              <p>Document chatbot. A file is uploaded, split into chunks, and the answer is taken from the relevant parts through a language model.</p>
+              <div class="tech"><span>Python</span><span>Flask</span><span>ChromaDB</span><span>RAG</span></div>
+              <a href="https://github.com/aneela-hanif/smart-chatbot-system" rel="noopener">View repository</a>
+            </div>
           </article>
+          <article class="panel project-card">
+            <div class="project-cover project-cover-eme" aria-hidden="true">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                <rect x="16" y="18" width="40" height="36" rx="6" fill="#fff"/>
+                <path d="M24 32h24M24 40h16" stroke="#8b1e3f" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="48" cy="46" r="8" fill="#1c1917"/>
+                <path d="m45 46 2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">Events &amp; Logistics</p>
+              <h3>EME — Event &amp; Inventory</h3>
+              <p>Event inventory work for equipment moving through dispatch, return, and transfer, with checks so each movement stays consistent.</p>
+              <div class="tech"><span>Inventory</span><span>Dispatch</span><span>Returns</span><span>Quality checks</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="cards more-work">
           <article class="panel card">
             <p class="kicker">React · JavaScript</p>
             <h3>Student App</h3>
