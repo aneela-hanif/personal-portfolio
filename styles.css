@@ -169,10 +169,10 @@ button, input, textarea { font: inherit; color: inherit; }
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1fr) 148px;
+  gap: 2rem;
   align-items: center;
-  padding: 3.2rem 0 1.5rem;
+  padding: 2.6rem 0 1rem;
 }
 
 .kicker,
@@ -200,12 +200,14 @@ h1 {
 }
 
 .rotator {
-  min-height: 1.8rem;
-  margin: 0.35rem 0 0;
+  min-height: 1.6rem;
+  margin: 0.25rem 0 0;
   color: var(--text-muted);
   font-family: var(--display);
-  font-size: 1.35rem;
+  font-size: 1.2rem;
 }
+
+.rotator.accent { color: var(--accent); font-weight: 650; }
 
 .lede, .prose { color: var(--text-muted); font-size: 1.05rem; }
 
@@ -215,26 +217,34 @@ h1 {
 
 .hero-photo {
   justify-self: end;
-  width: 168px;
+  align-self: center;
+  width: 148px;
   margin: 0;
 }
 
 .hero-photo img {
-  width: 168px;
-  height: 132px;
+  width: 148px;
+  height: 112px;
+  max-width: 148px;
+  max-height: 112px;
   object-fit: cover;
-  object-position: center 18%;
-  border-radius: 1.15rem;
+  object-position: center 16%;
+  border-radius: 0.8rem;
   background: #efe8e2;
 }
 
 .hero-photo figcaption {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  display: grid;
+  gap: 0.1rem;
+  margin-top: 0.4rem;
   color: var(--text-muted);
-  font-size: 0.92rem;
-  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  line-height: 1.25;
+}
+
+.hero-photo figcaption strong {
+  color: var(--text);
+  font-size: 0.8rem;
 }
 
 section { padding: 2.4rem 0 0.4rem; scroll-margin-top: 5.5rem; }
@@ -356,6 +366,9 @@ footer a { color: var(--accent); font-weight: 650; }
   .nav-links { display: none; }
   .menu-btn { display: grid; }
   .hero, .about-grid, .job, .cards, .skill-grid, .contact-grid, .fields { grid-template-columns: 1fr; }
+  .hero-photo,
+  .hero-photo img { width: 148px; height: auto; }
+  .hero-photo img { height: 112px; max-height: 112px; }
   .hero-photo { justify-self: start; }
   .hire-label { display: none; }
 }
