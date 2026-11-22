@@ -169,10 +169,10 @@ button, input, textarea { font: inherit; color: inherit; }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 148px;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 3rem;
   align-items: center;
-  padding: 2.6rem 0 1rem;
+  padding: 3.2rem 0 1.2rem;
 }
 
 .kicker,
@@ -218,33 +218,34 @@ h1 {
 .hero-photo {
   justify-self: end;
   align-self: center;
-  width: 148px;
+  width: 300px;
   margin: 0;
 }
 
 .hero-photo img {
-  width: 148px;
-  height: 112px;
-  max-width: 148px;
-  max-height: 112px;
+  width: 300px;
+  height: 340px;
+  max-width: 300px;
   object-fit: cover;
-  object-position: center 16%;
-  border-radius: 0.8rem;
+  object-position: center 12%;
+  border-radius: 1.25rem;
   background: #efe8e2;
+  -webkit-mask-image: linear-gradient(#000 82%, transparent);
+  mask-image: linear-gradient(#000 82%, transparent);
 }
 
 .hero-photo figcaption {
   display: grid;
-  gap: 0.1rem;
-  margin-top: 0.4rem;
+  gap: 0.15rem;
+  margin-top: 0.15rem;
   color: var(--text-muted);
-  font-size: 0.75rem;
-  line-height: 1.25;
+  font-size: 0.92rem;
+  line-height: 1.3;
 }
 
 .hero-photo figcaption strong {
   color: var(--text);
-  font-size: 0.8rem;
+  font-size: 0.98rem;
 }
 
 section { padding: 2.4rem 0 0.4rem; scroll-margin-top: 5.5rem; }
@@ -367,8 +368,8 @@ footer a { color: var(--accent); font-weight: 650; }
   .menu-btn { display: grid; }
   .hero, .about-grid, .job, .cards, .skill-grid, .contact-grid, .fields { grid-template-columns: 1fr; }
   .hero-photo,
-  .hero-photo img { width: 148px; height: auto; }
-  .hero-photo img { height: 112px; max-height: 112px; }
+  .hero-photo img { width: 240px; max-width: 240px; }
+  .hero-photo img { height: 272px; }
   .hero-photo { justify-self: start; }
   .hire-label { display: none; }
 }
