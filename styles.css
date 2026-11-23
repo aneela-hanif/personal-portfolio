@@ -265,7 +265,24 @@ h2 { margin: 0 0 1rem; font-size: clamp(1.7rem, 5vw, 3rem); }
   gap: 1.2rem;
 }
 
-.about-grid { grid-template-columns: 1.2fr 0.8fr; }
+.about-grid { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
+
+.about-grid .chips {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.about-grid .chips li {
+  display: grid;
+  place-items: center;
+  min-height: 2.35rem;
+  padding: 0.4rem 0.65rem;
+  font-size: 0.84rem;
+  text-align: center;
+  line-height: 1.25;
+}
 
 .job { grid-template-columns: 200px 1fr; padding: 1.4rem; }
 
@@ -574,6 +591,7 @@ textarea { min-height: 140px; resize: vertical; }
   .nav-links { display: none; }
   .menu-btn { display: grid; }
   .hero, .about-grid, .job, .cards, .skill-grid, .contact-grid, .fields, .ai-split, .project-grid, .more-work { grid-template-columns: 1fr; }
+  .about-grid .chips { grid-template-columns: 1fr 1fr; }
   .hero { gap: 1.4rem; padding: 2rem 0 0.4rem; }
   .hero-photo,
   .hero-photo img { width: 210px; max-width: 210px; }
