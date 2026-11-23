@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=12" />
+    <link rel="stylesheet" href="styles.css?v=13" />
     <script>
       if (localStorage.getItem("theme") === "dark") document.documentElement.classList.add("dark");
     </script>
@@ -53,61 +53,65 @@
     </header>
 
     <main id="main" class="wrap">
-      <header class="page-head">
-        <p class="section-label">Resume</p>
-        <h1>Aneela Hanif</h1>
-      </header>
+      <article class="cv">
+        <header class="cv-head">
+          <h1>Aneela Hanif</h1>
+          <p class="cv-role">AI Engineer</p>
+          <p>+92 349 3419917 | <a href="mailto:aneela.hnf12@gmail.com">aneela.hnf12@gmail.com</a> | <a href="https://www.linkedin.com/in/aneela-hanif-224ba43b4/" rel="noopener">linkedin.com/in/aneela-hanif-224ba43b4</a></p>
+          <p><a href="https://github.com/aneela-hanif" rel="noopener">github.com/aneela-hanif</a> | Lahore, Pakistan</p>
+        </header>
 
-      <article class="panel resume-sheet">
-        <div class="resume-top">
-          <div>
-            <p class="kicker">AI Engineer</p>
-            <p class="resume-meta">Lahore</p>
-            <p class="resume-contact">
-              <a href="mailto:aneela.hnf12@gmail.com">aneela.hnf12@gmail.com</a>
-              · <a href="https://wa.me/923493419917" rel="noopener">+92 349 3419917</a>
-            </p>
-            <p class="resume-contact">
-              <a href="https://www.linkedin.com/in/aneela-hanif-224ba43b4/" rel="noopener">LinkedIn</a>
-              · <a href="https://github.com/aneela-hanif" rel="noopener">GitHub</a>
-            </p>
-          </div>
-        </div>
-
-        <section class="resume-block">
-          <h2>Education</h2>
-          <div class="resume-role">
-            <h3>Computer Science</h3>
-          </div>
+        <section>
+          <h2>Professional Summary</h2>
+          <p>AI engineer working remotely at Linkeinfix on AI engineering, retrieval-augmented generation and large language models, AI chatbot development, and quality assurance. Hands-on document chatbots that split a file into chunks, retrieve the relevant parts, and answer with a language model.</p>
         </section>
 
-        <section class="resume-block">
-          <h2>Experience</h2>
-          <div class="resume-role">
-            <h3>Linkeinfix</h3>
+        <section>
+          <h2>Professional Experience</h2>
+          <div class="cv-roleline">
+            <h3>AI Engineer</h3>
             <span>Remote</span>
           </div>
-          <p>AI engineering, retrieval-augmented generation and large language models, AI chatbot development, and quality assurance.</p>
-          <ul class="chips">
-            <li>AI Engineering</li>
-            <li>RAG &amp; LLM</li>
-            <li>AI Chatbot Development</li>
-            <li>Quality Assurance</li>
+          <p class="cv-org">Linkeinfix</p>
+          <ul>
+            <li>Work across AI engineering, RAG and LLM systems, and AI chatbot development.</li>
+            <li>Quality assurance on the remote work at Linkeinfix.</li>
           </ul>
         </section>
 
-        <section class="resume-block">
+        <section>
           <h2>Projects</h2>
-          <div class="resume-role">
+          <div class="cv-roleline">
             <h3>Smart Chatbot</h3>
             <span>Python · Flask · ChromaDB</span>
           </div>
-          <p>Document chatbot. A file is uploaded, split into chunks, and the answer is taken from the relevant parts through a language model.</p>
-          <div class="resume-role">
+          <ul>
+            <li>Upload a PDF or text file, split it into chunks, and store the chunks for retrieval.</li>
+            <li>Answer from the relevant parts through a language model on OpenRouter.</li>
+          </ul>
+          <div class="cv-roleline">
             <h3>EME — Event &amp; Inventory</h3>
             <span>Events &amp; Logistics</span>
           </div>
-          <p>Event inventory work for equipment moving through dispatch, return, and transfer, with checks so each movement stays consistent.</p>
+          <ul>
+            <li>Event inventory work for equipment moving through dispatch, return, and transfer.</li>
+            <li>Checks so each movement stays consistent.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Technical Skills</h2>
+          <div class="cv-skill"><strong>Languages</strong><span>Python, JavaScript, HTML</span></div>
+          <div class="cv-skill"><strong>Frameworks</strong><span>Flask, React</span></div>
+          <div class="cv-skill"><strong>AI</strong><span>RAG architecture, document chunking and retrieval, prompt engineering, chatbot development</span></div>
+          <div class="cv-skill"><strong>Data &amp; APIs</strong><span>ChromaDB, OpenRouter, SQL Server</span></div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div class="cv-roleline">
+            <h3>Computer Science</h3>
+          </div>
         </section>
       </article>
     </main>
